@@ -4,15 +4,12 @@
 
 [entryPoints]
   [entryPoints.web]
-    address = ":80"
-
-  [entryPoints.websecure]
-    address = ":443"
+    address = ":8080"
 
 [providers.docker]
 
 [certificatesResolvers.letsencrypt.acme]
-  email = "admin@example.com"
+  email = "admin@gmail.cim"
   storage = "acme.json"
   [certificatesResolvers.letsencrypt.acme.httpChallenge]
     entryPoint = "web"
